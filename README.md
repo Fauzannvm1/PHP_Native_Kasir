@@ -1,6 +1,6 @@
-# Sistem Kasir — PHP Native POS
+# Sistem Kasir — PHP Native
 
-Aplikasi kasir (Point of Sale) berbasis web menggunakan **PHP Native**, **MySQL**, dan **Tailwind CSS**. Cocok untuk toko kecil, warung, atau project pembelajaran PHP.
+Aplikasi kasir berbasis web menggunakan **PHP Native**, **MySQL**, dan **Tailwind CSS**. Cocok untuk toko kecil dan warung.
 
 ![PHP](https://img.shields.io/badge/PHP-Native-777BB4?style=flat-square\&logo=php\&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-Database-4479A1?style=flat-square\&logo=mysql\&logoColor=white)
@@ -12,13 +12,22 @@ Aplikasi kasir (Point of Sale) berbasis web menggunakan **PHP Native**, **MySQL*
 Source code tersedia di GitHub:
 
 🔗 GitHub Repository:
-https://github.com/Fauzannvm1/PHP-Native.git
+https://github.com/Fauzannvm1/PHP_Native_Kasir.git
 
 Clone project:
 
 ```bash
-git clone https://github.com/Fauzannvm1/PHP-Native.git
+git clone https://github.com/Fauzannvm1/PHP_Native_Kasir.git
 ```
+
+---
+
+## Presentasi Project
+
+Presentasi project dapat dilihat melalui link berikut:
+
+🔗 Link Presentasi:
+https://youtu.be/4KzZNLOSO1E?si=pLrCVP3a2bW88QbW
 
 ---
 
@@ -35,7 +44,7 @@ git clone https://github.com/Fauzannvm1/PHP-Native.git
 
 ---
 
-## Screenshot Alur (Ringkas)
+## Alur (Ringkas)
 
 ```text
 Login → Dashboard → Produk / Transaksi / Laporan → Struk
@@ -59,13 +68,13 @@ Login → Dashboard → Produk / Transaksi / Laporan → Struk
 Clone repository:
 
 ```bash
-git clone https://github.com/Fauzannvm1/PHP-Native.git
+git clone https://github.com/Fauzannvm1/PHP_Native_Kasir.git
 ```
 
 Atau letakkan folder project di:
 
 ```text
-C:\xampp\htdocs\PHP Native\
+C:\xampp\htdocs\PHP_Native_Kasir\
 ```
 
 ### 2. Buat database
@@ -90,22 +99,25 @@ define('DB_NAME', 'kasir_db');
 Buka sekali di browser:
 
 ```text
-http://localhost/PHP%20Native/seeder.php
+http://localhost/PHP_Native_Kasir/seeder.php
 ```
+
+> **Penting:** data dibawah ini berdasarkan data default didalam File `seeder.php`. Data dibawah dapat berubah jika data didalam File dirubah.
 
 Akun yang dibuat:
 
-| Username | Password   | Role  |
-| -------- | ---------- | ----- |
-| `admin`  | `admin123` | admin |
-| `kasir1` | `admin123` | kasir |
+| Username | Password    | Role   |
+| -------- | ----------- | ------ |
+| `Fauzan` | `Fauzan123` | admin  |
+| `Farel`  | `Farel123`  | kasir 1|
+| `Akbar`  | `Akbar123`  | kasir 2|
 
 > **Penting:** Hapus atau rename `seeder.php` setelah digunakan (keamanan).
 
 ### 5. Login
 
 ```text
-http://localhost/PHP%20Native/index.php
+http://localhost/PHP_Native_Kasir/index.php
 ```
 
 ---
@@ -196,18 +208,6 @@ Relasi utama: `transaksi` → `users`, `detail_transaksi` → `transaksi` & `pro
 
 ---
 
-## Kontribusi / Pengembangan Lanjutan
-
-Ide improvement:
-
-* [ ] Rename `login.php` ↔ `index.php` agar redirect konsisten
-* [ ] DB transaction saat checkout (`mysqli_begin_transaction`)
-* [ ] CSRF protection pada form POST
-* [ ] Role-based access (admin vs kasir)
-* [ ] Export laporan ke PDF/Excel
-
----
-
 ## Author
 
 Developed by **Fauzan**
@@ -215,4 +215,4 @@ GitHub: https://github.com/Fauzannvm1
 
 ---
 
-**Dibuat dengan PHP Native — Sistem Kasir (Point of Sale)**
+**Dibuat dengan PHP Native — Sistem Kasir**
